@@ -1,0 +1,89 @@
+body {
+    background-image: url('nordwood-themes-ubIWo074QlU-unsplash.jpg');
+    background-size: cover; /* This ensures the image covers the entire background */
+    background-position: center; /* This centers the background image */
+    background-repeat: no-repeat; /* This prevents the image from repeating */
+    background-attachment: fixed; /* This keeps the background fixed during scrolling */
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+/* Card hover effect */
+.card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow */
+    transform: translateY(-5px); /* Slightly lift the card */
+}
+
+.card-header {
+    background-color: #007BFF;
+    color: white;
+    border-radius: 8px 8px 0 0;
+}
+
+.card-body {
+    margin-bottom: 50px;
+}
+
+h2 {
+    margin-top: 0;
+    font-size: 24px;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input, select, button {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+}
+
+button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: #0056b3; /* Darker shade of blue */
+    transform: scale(1.05); /* Slightly enlarge the button */
+}
+
+.hidden {
+    display: none;
+}
+
+.navbar {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Navbar brand hover effect */
+.navbar-brand:hover {
+    color: #FFD700; /* Change color to gold */
+    transition: color 0.3s;
+}
+
+/* Table row hover effect */
+.table tbody tr:hover {
+    background-color: #f1f1f1; /* Light grey background */
+    transition: background-color 0.3s;
+}

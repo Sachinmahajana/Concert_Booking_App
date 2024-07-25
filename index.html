@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meeting Room Booking System</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar navbar-dark bg-dark">
+        <a class="navbar-brand mx-auto" href="#">Meeting Room Booking System</a>
+    </nav>
+    <div class="col-md-12" style="margin-top: 50px;">
+        <div class="row">
+            <div class="col-md-5">
+                <div class="card available-rooms">
+                    <div class="card-header text-center">
+                        <h2>Rooms Available</h2>
+                    </div>
+                    <div class="card-body">
+                        <p id="conference-room-message">Conference Rooms: <span id="conference-rooms">10</span></p>
+                        <p id="meeting-room-message">Meeting Rooms: <span id="meeting-rooms">10</span></p>
+                        <p id="board-room-message">Board Rooms: <span id="board-rooms">10</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-7">
+                <div class="card book-room">
+                    <div class="card-header text-center">
+                        <h2>Room Bookings</h2>
+                    </div>
+                    <div class="card-body">
+                        <form id="booking-form">
+                            <div class="form-group mb-3">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" class="form-control" required>
+                            </div>
+                            <div class="form-group mb-3">
+                                <label for="date">Date</label>
+                                <input type="date" id="date" class="form-control" required>
+                            </div>
+                            <div class="form-group mb-3">
+                                <label for="roomType">Room Type</label>
+                                <select id="roomType" class="form-control" required>
+                                    <option value="Conference Room">Conference Room</option>
+                                    <option value="Meeting Room">Meeting Room</option>
+                                    <option value="Board Room">Board Room</option>
+                                </select>
+                            </div>
+                            <div class="form-group mb-3">
+                                <label for="startTime">Start Time</label>
+                                <input type="time" id="startTime" class="form-control" required>
+                            </div>
+                            <div class="form-group mb-3">
+                                <label for="endTime">End Time</label>
+                                <input type="time" id="endTime" class="form-control" required>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Book Room</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-12">
+                <div class="card your-bookings">
+                    <div class="card-header text-center">
+                        <h2>Your Bookings</h2>
+                    </div>
+                    <div class="card-body">
+                        <table id="bookingsTable" class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Date</th>
+                                    <th>Start Time</th>
+                                    <th>End Time</th>
+                                    <th>Room Type</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- Booked rooms will be appended here -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
